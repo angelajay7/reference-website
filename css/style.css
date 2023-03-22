@@ -74,3 +74,9 @@ nav li {
   text-decoration: none;
   color: forestgreen;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
