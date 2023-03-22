@@ -31,8 +31,10 @@ header {
   background: lavenderblush;
   padding 1em 3em;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
 }
 
 h1 {
