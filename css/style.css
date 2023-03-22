@@ -8,34 +8,15 @@
   --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 }
 
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html {
-  font-family: 'Roboto', sans-serif;
-  background-color: pink;
-  color: #707070;
-  scroll-behavior: smooth;
-  line-height: 1.4;
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-
-body {
-  margin: 0;
-  max-width: 1200px;
-}
-
-header {
-  background: lavenderblush;
-  padding 1em 3em;
-  display: flex;
-  flex-direction: row;
-}
-
 h1 {
   font-size: var(--font-size-xxl);
+  font-weight: 400;
 }
 
 h2 {
@@ -48,4 +29,48 @@ h3 {
 
 p {
   font-size: var(--font-size-base);
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: pink;
+  color: #707070;
+  scroll-behavior: smooth;
+  line-height: 1.4;
+}
+
+main {
+  margin: 0;
+  max-width: 1200px;
+}
+
+header {
+  background: lavenderblush;
+  padding: 1em 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3em;
+}
+
+nav {
+  text-align: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 3em;
+  margin-bottom: 0;
+}
+
+.music {
+  text-decoration: none;
+  color: forestgreen;
 }
