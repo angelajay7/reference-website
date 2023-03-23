@@ -80,3 +80,17 @@ nav li {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color:#707070;
+    color:white;
+  }
+  header {
+    background: black;
+    color: pink;
+  }
+.music {
+  color: orange;
+}
+}
