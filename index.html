@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header>
+<header aria-label="site info">
   <h1>Reference Website</h1>
 
   <nav>
     <ul>
-      <li><a href="#About"></a>About </li>
-      <li><a href="#Home"></a>Home </li>
-      <li><a href="#Contact"></a>Contact </li>
+      <li><a href="#About" aria-label="About Angela Jay"></a>About </li>
+      <li><a href="#Home" aria-label="Home page"></a>Home </li>
+      <li><a href="#Contact" aria-label="Contact Angela"></a>Contact </li>
     </ul>
   </nav>
 </header>
@@ -42,7 +42,7 @@
 
         <li>4 days out of the week I will go to the gym for 7:00am. On days where I don't go, I will do some school work
           while listening to
-          <a class=music href="https://open.spotify.com/playlist/3sw0t0icwozVoQP5J2Z8cX?si=dccef7132cd14849">classical
+          <a class=music href="https://open.spotify.com/playlist/3sw0t0icwozVoQP5J2Z8cX?si=dccef7132cd14849" aria-label="Spotify link for classical piano music">classical
             music.</a>
         </li>
 
@@ -61,7 +61,7 @@
       </blockquote>
 
       <p> Ever since I was young my dad has told me:
-        <q>You sleep like a <span style="color: saddlebrown">log</span>.</q>
+        <q>You sleep like a <span aria-label="log coloured as saddlebrown" style="color: saddlebrown">log</span>.</q>
       </p>
       <p>At any given point in the day, you can often find me with multiple beverages by my side. Here I have them
         listed along with how they benefit me.</p>
@@ -79,9 +79,9 @@
         is used in cases where smaller text is needed, a common example of this being <small>copyright
           information</small> in the footer.
       </p>
-      <figure>
-        <img src="images/cupcake.jpeg" alt="cupcake sandwich">
-        <figcaption>"The best way to eat a cupcake" March 6th, 2023</figcaption>
+      <figure role="figure" aria-labelledby="caption">
+        <img src="images/cupcake.jpeg" alt="photo of a cupcake sandwich">
+        <figcaption id="caption">"The best way to eat a cupcake" March 6th, 2023</figcaption>
       </figure>
     </section>
     <h3>Flexbox</h3>
@@ -93,17 +93,17 @@
       <p>CSS Grid is used to help break up the given space on a page into smaller blocks. You can assign your content to
         these given blocks and give them different positions and sizes. You can even overlap child elements within the
         grid container to create layered effects. </p>
-      <div class="grid">
-        <img src="images/lat.jpg" alt="La-tonya" />
-        <img src="images/alex.jpg" alt="Alex" />
-        <img src="images/abbey.jpg" alt="Abbey" />
-        <img src="images/enissa.jpg" alt="Enissa" />
-        <img src="images/ibrah.jpg" alt="Ibrah" />
-        <img src="images/zara.jpg" alt="Zara" />
+      <div class="grid" role="img" aria-label="grid of Angela's film photos">
+        <img src="images/lat.jpg" alt="Photo of La-tonya Gayle" />
+        <img src="images/alex.jpg" alt="Photo of Alex Wisco" />
+        <img src="images/abbey.jpg" alt="Photo of Abbey Smith" />
+        <img src="images/enissa.jpg" alt="Photo of Enissa Ciper" />
+        <img src="images/ibrah.jpg" alt="Photo of Ibrah Mohammed" />
+        <img src="images/zara.jpg" alt="Photo of Zara Valenzuela" />
       </div>
     </article>
 
-    <a class="button" href="#">Hover here!</a>
+    <a aria-label="hover button" class="button" href="#">Hover here!</a>
 
 </main>
 </body>
